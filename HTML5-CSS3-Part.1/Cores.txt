@@ -1,0 +1,29 @@
+ABCDEF...
+
+banário 01
+
+numérico 0123456789
+
+hexadecimal 0123456789ABCDEF
+
+RBG = Red Green Blue
+
+#_ _ _ _ _ _
+
+0 = ausência de cor
+F = máximo de cor
+
+Preto = #000000
+Branco = #FFFFFF
+
+Red = #FF0000
+-------------------------------
+RGB 0,1,2,3,...255
+
+0 = ausência de cor
+255 = máximo de cor
+
+rgb(255,255,255)
+
+rgb(0,0,255)
+
