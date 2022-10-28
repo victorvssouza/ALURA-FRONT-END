@@ -1,5 +1,6 @@
 body {
     background: #CCCCCC;
+    font-family: Arial, Helvetica, sans-serif;
 }
 #banner {
     width: 100%;
@@ -19,4 +20,8 @@ em strong {
 
 #mission {
     font-size: 20px;
+}
+
+.itens {
+    font-style: italic;
 }
