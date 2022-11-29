@@ -12,7 +12,7 @@
 <body>
     <header>
         <div class="caixa">
-            <h1><img src="/HTML5-CSS3-Part.1/produtos/logo.png" alt=""></h1>
+            <h1><img src="/HTML5-CSS3-Part.1/produtos/logo.png" alt="Logo da Barbearia Alura"></h1>
 
             <nav>
                 <ul>
@@ -31,34 +31,50 @@
             <!--Value é usado para definir um valor fixo independente do idioma-->
 
             <label for="nomesobrenome">Nome e sobrenome</label> 
-            <input type="text" name="nome_e_sobrenome" id="nomesobrenome" class="input-padrao"> 
+            <input type="text" name="nome_e_sobrenome" id="nomesobrenome" class="input-padrao" required placeholder="João de Maria da Silva"> 
 
             <label for="email">Email</label>
-            <input type="email" name="email" id="email" class="input-padrao">
+            <input type="email" name="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
 
             <label for="telefone">Telefone</label>
-            <input type="tel" name="telefone" id="telefone" class="input-padrao">
+            <input type="tel" name="telefone" id="telefone" class="input-padrao" required placeholder="(XX) X XXXX-XXXX">
             
             <label for="mensagem">Mensagem</label>
-            <textarea name="mensagem" id="mensagem" cols="70" rows="10" class="input-padrao"></textarea>
+            <textarea name="mensagem" id="mensagem" cols="70" rows="10" class="input-padrao" required placeholder="Deixe sua opinião"></textarea>
 
             <!--Adicionando um mesmo Name nos Input do tipo Radio é possivel selecionar apenas um item entre esses Radio, pois eles farão parte da mesma familia-->
-            <div>
-                <p>Como prefere nosso contato?</p>
+            <fieldset>
+                <legend>Como prefere nosso contato?</legend>
                 <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
 
                 <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
                 
-                <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">Whatsapp</label>              
-            </div>
-
-            <label for="novidades"><input type="checkbox" id="novidades" class="checkbox"> Gostaria de receber nossas novidades por email?</label>
+                <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>Whatsapp</label>              
+            </fieldset>
+            <!--Add required o input se torna obrigatorio;
+                Add checked  a checkbox fica marcada automaticamente;
+                Add placeholder o input fica com uma descrição que some ao ser preenchido.
+            -->
+            <fieldset>
+                <legend>Qual hórario prefere ser atendido</legend>
+                <select name="" id="">
+                    <option value="">Manhã</option>
+                    <option value="">Tarde</option>
+                    <option value="">Noite</option>
+                </select>
+            </fieldset>
+            <!--
+                O certo é colocar fieldset no lugar de div;
+                O certo é colocar legend no lugar de p;
+                Sempre é bom colocar alt para que usuarios com algum tipo de deficiencia consigam entender o layout da página.
+            -->
+            <label for="novidades"><input type="checkbox" id="novidades" class="checkbox" checked> Gostaria de receber nossas novidades por email?</label>
 
             <input type="submit" value="Enviar Formulário">
     </main>
 
     <footer>
-        <img src="/HTML5-CSS3-Part.1/produtos/logo-branco.png" alt="logo da barbearia Alura">
+        <img src="/HTML5-CSS3-Part.1/produtos/logo-branco.png" alt="logo da Barbearia Alura">
         <p class="copyright">&copy; Copyright Barbearia Alura - 2022</p>
     </footer>
 </body>

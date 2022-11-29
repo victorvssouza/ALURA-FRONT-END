@@ -7,7 +7,7 @@ form {
     margin: 40px 0;
 }
 
-form label, form p {
+form label, form legend {
          /*Usamos virgula para separar vários seletores que vão possui as mesmas propriedades de CSS*/
     display: block;
     font-size: 20px;
@@ -25,3 +25,6 @@ form label, form p {
     margin: 20px 0;
 }
 
+fieldset {
+    width: 52.5%;
+}
