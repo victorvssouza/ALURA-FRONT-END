@@ -8,3 +8,14 @@ meta charset - passar as informações do encoding da nossa página para o naveg
 title - definir titulo
 head - separar as informações que estão sendo passadas para o navegador
 body - separa o conteudo da pagina
+
+
+Para um bloco onde o conteúdo tenha o mesmo significado, o mesmo sentido, usamos uma <section>.
+Quando a divisão for apenas visual devemos usar <div>.
+
+id | class
+Usamos id quando se refere a comportamento, ou seja, ao javascript.
+Usamos class quando se refere ao estilo, ou seja, ao css.
+
+fonte-size: em; 
+em é unidade equivalente a px. 2em são 2x o pixel padrão da fonte.
