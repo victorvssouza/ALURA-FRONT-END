@@ -19,3 +19,8 @@ Usamos class quando se refere ao estilo, ou seja, ao css.
 
 fonte-size: em; 
 em é unidade equivalente a px. 2em são 2x o pixel padrão da fonte.
+
+CSS 
+Pseudo-Elementos: ":hover", ":active", ":visited", ":required"
+
+Quando se usa display: inline-block; os elementos do html devem está na mesma linha igual a linha 56 do index.html
