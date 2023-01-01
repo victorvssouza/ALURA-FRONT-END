@@ -35,7 +35,3 @@ if(alturaValida && pesoValido){
     tdImc.textContent = imc;
     console.log("IMC: ",imc);
 } 
-
-var a
-const b = 2;
-let c =

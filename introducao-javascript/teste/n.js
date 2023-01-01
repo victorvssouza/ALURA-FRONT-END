@@ -1,8 +1,13 @@
-var a = document.querySelector("lorem");
-console.log(a);
+var setorTI = true;
+var gerente = true;
+if(setorTI == true && gerente == true){
+    console.log("Acesso ADMIN permitido");
+}else{
+    console.log("Acesso ADMIN negado")
+}
 
-let text = document.getElementById('divA').textContent;
-// Agora a variável de texto é: 'Isto é algum texto!'
-document.getElementById('divA').textContent = 'Este texto é diferente!';
-// O HTML de divA agora é:
-// <div id="divA">Este texto é diferente!</div>
+if(setorTI == true && gerente == false){
+    console.log("Acesso COMMOM permitido");
+}else{
+    console.log("Acesso COMMOM negado");
+}
