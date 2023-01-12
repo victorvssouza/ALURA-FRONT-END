@@ -16,8 +16,6 @@ for( var i=0 ; i < produtos.length ; i++){
 
 
 
-
-
 // TESTE FIREWALL
 /*var setorTI = true;
 var gerente = true;
