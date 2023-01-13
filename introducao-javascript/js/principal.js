@@ -47,3 +47,9 @@ for (let pacienteAtual of pacientes) {
 //     var titulo = titulos[i];
 //     titulo.classList.add("titulo");
 // }
+
+var botaoAdd = document.querySelector("#adicionar-paciente");
+botaoAdd.addEventListener("click", function(event){
+    event.preventDefault();
+    console.log("Oi, fui clicado!");
+});
