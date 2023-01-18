@@ -32,19 +32,18 @@ for (let pacienteAtual of pacientes) {
 
     // se as entradas são válidas
     if (alturaEhValida && pesoEhValido) {
-        var imc = peso / (altura * altura);
-        tdImc.textContent = imc.toFixed(2);
+        var imc = calculaImc(peso,altura);
         //tdImc.style.color = "blue" //Mudar cor do texto
         //tdImc.style.backgroundColor = "blue" //Mudar cor do background 
         //console.log(pacienteAtual.classList); //Listar todas as classes da variavel
     }
 }
 
-//Adiciona a classe titulo a todas os titulos h2
-// var titulos = document.querySelectorAll("h2");
+function calculaImc(peso,altgura){
+    var imc = 0;
 
-// for(var i = 0 ; i <  titulos.length ; i++){
-//     var titulo = titulos[i];
-//     titulo.classList.add("titulo");
-// }
+    imc = peso / (altura * altura);
+
+    return imc.toFixed(2);
+}
 
