@@ -1,49 +1,63 @@
 var titulo = document.querySelector(".titulo");
-tituto = document.getElementsByClassName('titulo').textContent = 'Aparecida Nutricionista2';
+titulo.textContent = "Aparecida Nutricionista";
 
-// removido a duplicidade de código e melhorando a legibilidade
 var pacientes = document.querySelectorAll(".paciente");
-for (let pacienteAtual of pacientes) {
-    var tdPeso = pacienteAtual.querySelector(".info-peso");
+
+for (var i = 0; i < pacientes.length; i++) {
+
+    var paciente = pacientes[i];
+
+    var tdPeso = paciente.querySelector(".info-peso");
     var peso = tdPeso.textContent;
 
-    var tdAltura = pacienteAtual.querySelector(".info-altura");
+    var tdAltura = paciente.querySelector(".info-altura");
     var altura = tdAltura.textContent;
 
-    var tdImc = pacienteAtual.querySelector(".info-imc");
+    var tdImc = paciente.querySelector(".info-imc");
 
-    var pesoEhValido = true;
-    var alturaEhValida = true;
+    var pesoEhValido = validaPeso(peso);
+    var alturaEhValida = validaAltura(altura);
 
-    // validações de entrada de dados
-    if (peso <= 0 || peso >= 3000) {
+    if (!pesoEhValido) {
+        console.log("Peso inválido!");
         pesoEhValido = false;
         tdImc.textContent = "Peso inválido";
-        pacienteAtual.classList.add("paciente-invalido");
-        console.log("Peso inválido!");
+        paciente.classList.add("paciente-invalido");
     }
 
-    if (altura <= 0 || altura >= 3.00) {
+    if (!alturaEhValida) {
+        console.log("Altura inválida!");
         alturaEhValida = false;
         tdImc.textContent = "Altura inválida";
-        pacienteAtual.classList.add("paciente-invalido");
-        console.log("Altura inválida!");
+        paciente.classList.add("paciente-invalido");
     }
 
-    // se as entradas são válidas
-    if (alturaEhValida && pesoEhValido) {
-        var imc = calculaImc(peso,altura);
-        //tdImc.style.color = "blue" //Mudar cor do texto
-        //tdImc.style.backgroundColor = "blue" //Mudar cor do background 
-        //console.log(pacienteAtual.classList); //Listar todas as classes da variavel
+    if (pesoEhValido && alturaEhValida) {
+        var imc = calculaImc(peso, altura);
+        tdImc.textContent = imc;
     }
 }
 
-function calculaImc(peso,altgura){
-    var imc = 0;
+function validaPeso(peso){
+    if(peso >= 0 && peso < 1000){
+        return true;
+    }else{
+        return false;
+    }
+}
 
+function validaAltura(altura){
+    if(altura >=0 && altura <= 3.0){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+
+function calculaImc(peso, altura) {
+    var imc = 0;
     imc = peso / (altura * altura);
 
     return imc.toFixed(2);
 }
-
