@@ -11,15 +11,16 @@
 <h2 class="h2">Mundo</h2>
 <h3 class="h3">!</h3>
 <script>
-    var a= document.querySelector(".h1");
-    a.innerHTML = "Hello"
+let list = [1, 2, 3, 4, 5];
 
-    var b = document.querySelector(".h2");
-    var World = 2
-    b.innerHTML = World; 
+// Removendo o elemento com valor 3
+let index = list.indexOf(3);
+if (index > -1) {
+  list.splice(index, 1);
+}
 
-    var c = document.querySelector("h3");
-    c.innerHTML = "!!!"
+console.log(list); // [1, 2, 4, 5]
+
 </script>
     <!-- <script src="n.js"></script> -->
 </body>
