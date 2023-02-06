@@ -156,3 +156,13 @@ button[disabled=disabled], button:disabled {
 .invisivel{
     display: none;
 }
+
+.style-erros {
+	color: red;
+	font-weight: bold;
+}
+
+.style-success {
+	color: green;
+	font-weight: bold;
+}
