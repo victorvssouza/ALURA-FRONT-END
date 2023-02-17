@@ -28,6 +28,4 @@ conta2.agencia = 102;
 let valor = 200;
 contaCorrenteRicardo.transferir(valor, conta2);
 
-console.log("valor:", valor)
-console.log(conta2);
-console.log(contaCorrenteRicardo);
+console.log(conta2._saldo)
