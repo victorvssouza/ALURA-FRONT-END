@@ -1,0 +1,18 @@
+.secao-horizontal .cartao {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+
+.secao-horizontal .cartao__imagem {
+    /* As 3 Formas de Aplicar Propriedades Grid */
+    /*grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;*/
+        /* OU */
+    /*grid-column: 1 / 2;
+    grid-row: 1 / 4;*/
+        /* OU */
+    grid-area: 1 / 1 / 4 / 2;
+}
+
