@@ -23,3 +23,13 @@ function habilitacao() {
     soma(4, 6)
     soma(3, 5) */
 /*FIM*/
+
+/* Pergunte ao usuário qual é o dia da semana. Se a resposta for "Sábado" ou "Domingo", mostre "Bom fim de semana!". Caso contrário, mostre "Boa semana!". */
+// var dia = prompt('Que dia é hoje? ');
+
+// if (dia == 'sábado' || dia == 'domingo'){
+//     alert('Bom fim de semana')
+// }else{
+//     alert('Boa semana')
+// }
+
