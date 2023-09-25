@@ -5,7 +5,7 @@ let chute;
 let tentativas = 1;
 
 //Definição do numero secreto e comparação
-let numeroSecreto = 29;
+let numeroSecreto = parseInt(Math.random() * 100   + 1);
 
 //enquanto chute for diferente de numeroSecreto
 while (chute != numeroSecreto) {
@@ -23,6 +23,7 @@ while (chute != numeroSecreto) {
     }
 }
 
+//Simplificando a condicional com operador ternário 
 let palavraTentativa = tentativas > 1 ? 'tentativas' : 'tentativa';
 alert(`Acertou!!! Você descobriu o número secreto ${numeroSecreto} com ${tentativas} ${palavraTentativa}.`);
 
