@@ -6,10 +6,16 @@ let tentativas = 1;
 
 //Definição do numero secreto e comparação
 let numeroSecreto = parseInt(Math.random() * 100   + 1);
+// let inicio = parseInt(Math.random() * 10);
+// let fim = parseInt(Math.random() * 1000);
+let inicio = parseInt(prompt('Digite o número inicial do intervalo: '));
+let fim = parseInt(prompt('Digite o número final do intervalo: '));
+
+console.log(numeroSecreto, inicio, fim)
 
 //enquanto chute for diferente de numeroSecreto
 while (chute != numeroSecreto) {
-    chute = prompt('Digite um número: ');
+    chute = prompt(`Digite um número entre ${numeroSecreto - inicio} e ${fim + numeroSecreto}: `);
         // Se chute for igual ao número secreto
     if (chute == numeroSecreto) {
         break;

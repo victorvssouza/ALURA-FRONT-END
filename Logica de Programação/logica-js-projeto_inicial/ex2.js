@@ -26,3 +26,15 @@
 //     console.log(i)
 //     i++;
 // }
+
+//Use o Math.random para gerar qualquer número aleatório e exiba esse número no console.
+// var cont = Math.random();
+// console.log(cont);
+
+// Use o Math.random para gerar um número inteiro entre 1 e 10 e exiba esse número no console.
+// var cont = parseInt(Math.random() * 10 + 1);
+// console.log(cont);
+
+// Use o Math.random para gerar um número inteiro entre 1 e 1000 e exiba esse número no console
+// var cont = parseInt(Math.random() * 1000 + 1);
+// console.log(cont);
