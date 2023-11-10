@@ -6,7 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./card-depoimento.component.scss']
 })
 export class CardDepoimentoComponent {
-  depoimento: String = 'A Jornada foi uma das melhores agências de viagens que eu já experimentei. O serviço ao cliente foi excepcional, e toda a equipe foi muito atenciosa e prestativa.'
-
+  depoimento: string = `
+    Recomendo fortemente a agência de viagens Jornada.
+    Eles oferecem um serviço personalizado e de alta qualidade
+    que excedeu minhas expectativas em minha última viagem.
+  `
   autoria: string = 'Mariana Faustino'
 }
