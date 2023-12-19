@@ -2,8 +2,8 @@
     "compilerOptions": {
         "outDir": "dist/js",
         "target": "ES6",
-        "noEmitOnError": true, //True = Não gera .js se o .ts estiver errado | false = Sempre gera .js
-        "noImplicitAny": true  //True = Não gera qualquer tipo, é preciso definir o tipo
+        "noEmitOnError": true,
+        "noImplicitAny": true
     },
     "include": ["app/**/*"]
 }
